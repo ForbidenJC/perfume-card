@@ -1,0 +1,172 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Montserrat:wght@500;700&display=swap');
+
+:root{
+--Dark-cyan: hsl(158, 36%, 37%);
+--Cream: hsl(30, 38%, 92%);
+--Very-dark-blue: hsl(212, 21%, 14%);
+--Dark-grayish-blue: hsl(228, 12%, 48%);
+--Very-dark-green: RGB(28,64,49);
+--White: hsl(0, 0%, 100%);
+
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    /* font-family: 'Fraunces', serif; */
+font-family: 'Montserrat', sans-serif;
+font-size: 14px;
+background-color: var(--Cream);
+}
+
+.card{
+  
+    width: 350px;
+    height: 636px;
+    border-radius: 12px;
+    overflow: hidden;
+    margin: 30px auto;
+    background-color: var(--White);
+}
+
+.card__first-section__image{
+    width: 100%;
+}
+
+.card__second-section__product-type{
+    color: var(--Dark-grayish-blue);
+    font-size: 1em;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    margin: 18px 24px 8px 24px;
+}
+
+.card__second-section__tittle{
+ font-family: 'Fraunces', serif;
+ margin: 0 25px 16px 25px;
+ font-size: 2.2em;
+ color: var(--Very-dark-blue);
+ line-height: 34px;
+}
+
+.card__second-section__description{
+margin: 0 25px 44px 25px ;
+color: var(--Dark-grayish-blue);
+font-size: 0.95em;
+line-height: 22px;
+
+}
+
+.card__second-section__price{
+ display: flex;
+ gap: 16px;
+ align-items: center;
+margin: 0 25px 16px 25px;
+padding-left: 15px;
+}
+
+.card__second-section__price__discount{
+    font-family: 'Fraunces', serif;
+    font-size: 2.2em;
+    color: var(--Dark-cyan);
+    
+}
+
+.card__second-section__price__value{
+    
+    font-size: 0.90em;
+    text-decoration: line-through;
+    color: var(--Dark-grayish-blue);
+}
+
+.icon-cart{
+    margin-right: 5px;
+}
+
+.card__second-section__button{
+ width: 295px;
+ height: 48px;
+ background-color: var(--Dark-cyan);
+ border: none;
+ border-radius: 8px;
+ color: var(--White);
+ font-size: 1.1em;
+ display: block;
+ margin: auto;
+ font-weight: 700;
+
+}
+.card__second-section__button:hover{
+    cursor: pointer;
+    background-color: var(--Very-dark-green);
+    transform: scale(1.1);
+    transition: 0.2s;
+}
+
+/***********************Desktop*******************************************/
+
+@media screen and (min-width: 700px) {
+    .card{
+        height: 450px;
+        width: 600px;
+        display: flex;
+        margin: 175px auto 75px;
+        
+
+
+    }
+    .card__first-section__image{
+        content: url('./images/image-product-desktop.jpg');
+    }
+
+    .card__second-section__button{
+        width: 235px;
+        margin 0 30px 0 30px
+    }
+
+    .card__second-section__product-type{
+        margin-top: 35px;
+    }
+
+   
+        
+
+  
+
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+    margin-top: 30px;
+}
+.attribution a { color: hsl(228, 45%, 44%); }
